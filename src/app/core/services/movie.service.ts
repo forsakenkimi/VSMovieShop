@@ -8,7 +8,7 @@ export class MovieService {
   constructor() { }
 
   getTopGorssingMovies(){
-
+//test
   }
 
   getMovieDetails(id:number){
@@ -16,7 +16,7 @@ export class MovieService {
   }
 
   getMoviesByGenre(genreId:number){
-    
+
   }
 
 }
