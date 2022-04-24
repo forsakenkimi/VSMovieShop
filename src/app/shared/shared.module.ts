@@ -10,6 +10,9 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    MovieCardComponent
   ]
 })
 export class SharedModule { }
