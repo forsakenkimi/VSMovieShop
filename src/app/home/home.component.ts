@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     console.log("Inside the Home Component inti method");
     this.movieService.getTopGorssingMovies().subscribe(m => {this.movies = m; 
-      console.log(this.movies);
+      console.table(this.movies);
     });
   }
 
