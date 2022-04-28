@@ -4,6 +4,9 @@
     <div class="col-md-4">
         <h4>Login</h4>
         <hr>
+        <div *ngIf="invalidLogin" class="alert alert-danger">
+            Please check email and password 
+        </div>
         <form (ngSubmit)="submit()">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
