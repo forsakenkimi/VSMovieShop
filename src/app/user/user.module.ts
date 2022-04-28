@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
+import { PurchasesComponent } from './purchases/purchases.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 
 @NgModule({
   declarations: [
-    UserComponent
+    UserComponent,
+    PurchasesComponent,
+    FavoritesComponent
   ],
   imports: [
     CommonModule,
