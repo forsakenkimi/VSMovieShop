@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   submit(){
     console.log('Clicked on submit button')
     console.log(this.loginModel)
-    this.accountService.login(this.loginModel).subscribe(
+    this.accountService.login(this.loginModel).subscribe( 
       data => this.router.navigateByUrl('/'),
       (err:HttpErrorResponse) => {
         this.invalidLogin=true;
