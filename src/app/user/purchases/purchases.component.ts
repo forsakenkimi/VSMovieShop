@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/core/services/user.service';
+import { Purchases } from 'src/app/shared/models/Purchases';
 
 @Component({
   selector: 'app-purchases',
@@ -7,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PurchasesComponent implements OnInit {
 
-  constructor() { }
+  purchases!: Purchases;
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
     //https://localhost:7270/api/User/purchases
-    
+    this.userService.getUserPurchasedMovies().subscribe(resp=>{
+      console.log(resp);
+      this.purchases = resp;
+    })
   }
 
 }
