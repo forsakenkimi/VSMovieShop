@@ -10,6 +10,8 @@ export class PurchasesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //https://localhost:7270/api/User/purchases
+    
   }
 
 }

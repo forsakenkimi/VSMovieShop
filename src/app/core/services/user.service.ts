@@ -8,7 +8,8 @@ export class UserService {
   constructor() { }
 
   getUserPurchasedMovies(){
-
+    //https://localhost:7270/api/User/purchases
+    
   }
 
   getUserFavoritedMovies(){
